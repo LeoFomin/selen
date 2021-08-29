@@ -14,13 +14,13 @@ public class Page3Test {
         System.setProperty("webdriver.chrome.driver", "src/resources/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
-        String url = "http://www.okna103.by/";
+        String url = "http://okna103.by/";
         driver.get(url);
-        Thread.sleep(5000);  // Let the user actually see something!
-        WebElement searchBox = driver.findElement(By.cssSelector("div#topmenu ul li:nth-child(3)"));
+        //Thread.sleep(5000);  // Let the user actually see something!
+        WebElement searchBox = driver.findElement(By.cssSelector("div #topmenu ul li:nth-child(3)"));
         searchBox.click();
         Thread.sleep(5000);  // Let the user actually see something!
-        String url1 = "http://www.okna103.by/remont_derevyannyh_okon.html";
+        String url1 = "http://okna103.by/remont_derevyannyh_okon.html";
         String url2 = driver.getCurrentUrl();
         Assert.assertEquals(url1,url2);
         driver.quit();
