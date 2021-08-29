@@ -11,7 +11,7 @@ public class Page3Test {
     @Test
     public void testPage3() throws InterruptedException {
         // Optional. If not specified, WebDriver searches the PATH for chromedriver.
-        System.setProperty("webdriver.chrome.driver", "C:\\mydriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/resources/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
         String url = "http://www.okna103.by/";
